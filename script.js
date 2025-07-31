@@ -74,6 +74,11 @@ document.addEventListener('DOMContentLoaded', function() {
     // Add CSS class for nav when scrolling
     const header = document.querySelector('header');
     
+    // Apply scrolled class immediately if page is not at the top
+    if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+    }
+    
     window.addEventListener('scroll', function() {
         if (window.scrollY > 50) {
             header.classList.add('scrolled');
