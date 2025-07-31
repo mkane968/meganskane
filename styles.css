@@ -81,6 +81,12 @@ header {
     background-color: var(--black);
     color: var(--white);
     padding: 2rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
@@ -130,6 +136,11 @@ nav a:hover:after {
 /* Sections */
 .section {
     padding: 5rem 0;
+}
+
+/* Add padding to first section to account for fixed header */
+#about {
+    padding-top: 12rem;
 }
 
 .alt-bg {
@@ -453,6 +464,20 @@ nav a:hover:after {
 .submit-button:hover {
     background-color: var(--gold);
     color: var(--black);
+}
+
+/* Header */
+header {
+    background-color: var(--black);
+    color: var(--white);
+    padding: 2rem 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Footer */
