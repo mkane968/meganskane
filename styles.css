@@ -245,6 +245,18 @@ nav a:hover:after {
     padding: 1rem 0;
 }
 
+.project-image {
+    margin: 1rem 0 2rem;
+    text-align: center;
+}
+
+.project-screenshot {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 .education-item ul {
     list-style: none;
 }
