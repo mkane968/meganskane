@@ -236,25 +236,35 @@ nav a:hover:after {
 
 /* Education Section */
 .education-content {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
 }
 
 .education-item {
-    padding: 1rem 0;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid rgba(255, 215, 0, 0.2);
+}
+
+.education-item:last-child {
+    border-bottom: none;
 }
 
 .project-image {
-    margin: 1rem 0 2rem;
+    margin: 1.5rem 0;
     text-align: center;
+    max-width: 100%;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .project-screenshot {
     max-width: 100%;
     height: auto;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: block;
+    margin: 0 auto;
 }
 
 .education-item ul {
