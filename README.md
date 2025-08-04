@@ -1,6 +1,8 @@
-# Personal Website - English Professor & EdTech CEO
+# Personal Website - Dr. Megan Kane
 
-A minimalist personal website for an English professor and EdTech CEO/founder, featuring a clean black, gray, and tan color scheme. The website showcases academic credentials, scholarship, teaching experience, and information about the AI Aware Writing Environment (AAWE) - an innovative platform for writing education.
+A professional academic portfolio website for Dr. Megan Kane, Visiting Assistant Professor in the English Department at Seton Hall University. The site features a modern black background with gold accents and showcases Dr. Kane's research in computational rhetoric, writing pedagogy, and AI integration in education. The website highlights her academic work, publications, presentations, and key projects including the AI Aware Writing Environment (AAWE) and SourceMapper citation analysis tool.
+
+View the live site at: [meganskane.com](https://meganskane.com)
 
 ## Features
 
@@ -8,10 +10,9 @@ A minimalist personal website for an English professor and EdTech CEO/founder, f
 - Minimalist black, gray, and tan color scheme
 - Sections for:
   - About
-  - Scholarship & Presentations
-  - Education & Teaching
-  - AI Aware Writing Environment (AAWE)
-  - Contact form
+  - Papers & Presentations
+  - Projects (AAWE and SourceMapper)
+  - Contact information
 
 ## Technologies Used
 
@@ -43,10 +44,14 @@ This website can be deployed to any web hosting service that supports static web
 - Amazon S3
 - Any traditional web hosting service
 
+### GitHub Pages Deployment Notes
+
+When deploying to GitHub Pages, be aware that the file paths are case-sensitive. Ensure that the image references in your HTML match the exact case of the actual image files in your repository. For example, if your image is named `SourceMapper.png`, the HTML reference must be `images/SourceMapper.png` and not `images/sourcemapper.png`.
+
 ## License
 
 This project is available for personal use.
 
 ## Contact
 
-For questions or customization requests, please use the contact form on the website.
+For questions or collaboration opportunities, please use the contact information provided on the website.
