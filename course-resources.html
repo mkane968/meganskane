@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Resources | Megan Kane, Ph.D.</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        if (sessionStorage.getItem('digitalTextMethodsAccess') !== 'granted') {
+            window.location.replace('courses.html');
+        }
+    </script>
+</head>
+<body class="materials-page">
+    <main>
+        <section class="section course-page">
+            <div class="container">
+                <div class="modules-heading">
+                    <div>
+                        <h1 class="modules-title">Course Modules</h1>
+                        <h2 class="course-name">ENG 3121/6122: Digital Text Methods</h2>
+                        <div class="course-meta">
+                            <p><strong>Instructor:</strong> Dr. Megan Kane</p>
+                            <p><strong>Semester:</strong> Fall 2026</p>
+                            <p><strong>Meeting Time:</strong> Tuesdays, 5–7:30 p.m.</p>
+                            <p><strong>Location:</strong> TBD</p>
+                        </div>
+                        <p>This course introduces computational approaches to textual analysis using large collections of texts, or corpora. You will learn how to assemble and document a corpus, develop research questions suited to large-scale analysis, and use digital methods to identify patterns of style, structure, and meaning across texts. Along the way, you will consider how corpus analysis makes new kinds of textual inquiry possible—particularly questions that emerge from patterns distributed across dozens or hundreds of texts.</p>
+                    </div>
+                    <button type="button" class="course-sign-out">Sign Out</button>
+                </div>
+
+                <section class="materials-section" aria-labelledby="general-materials-heading">
+                    <h2 id="general-materials-heading" class="section-heading">General Materials</h2>
+                    <div class="module-list">
+                    <details class="module-card">
+                        <summary>Syllabus</summary>
+                        <div class="module-content">
+                            <div class="resource-group module-wide">
+                                <ul class="resource-list">
+                                    <li><a href="files/ENG-3121-6122-Digital-Text-Methods-Syllabus.docx" download><strong>Download the ENG 3121/6122: Digital Text Methods syllabus</strong></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </details>
+
+                    <details class="module-card">
+                        <summary>Corpora for Analysis</summary>
+                        <div class="module-content">
+                            <div class="resource-group module-wide">
+                                <p>For your final project, you will select texts from one of the following preapproved corpora:</p>
+                                <ul class="resource-list">
+                                    <li><a href="https://clic-fiction.com/" target="_blank" rel="noopener noreferrer"><strong>CLiC Fiction Corpora</strong><span class="sr-only"> (opens in a new tab)</span></a>: nineteenth-century British novels and children’s literature</li>
+                                    <li><a href="https://www.folger.edu/explore/shakespeares-works/download/" target="_blank" rel="noopener noreferrer"><strong>Folger Shakespeare Corpus</strong><span class="sr-only"> (opens in a new tab)</span></a>: Shakespeare’s plays and poetry</li>
+                                    <li><a href="https://github.com/aparrish/gutenberg-poetry-corpus" target="_blank" rel="noopener noreferrer"><strong>Project Gutenberg Poetry Corpus</strong><span class="sr-only"> (opens in a new tab)</span></a>: a large collection of public-domain English-language poetry</li>
+                                    <li><a href="https://micusp.elicorpora.info/main" target="_blank" rel="noopener noreferrer"><strong>Michigan Corpus of Upper-Level Student Papers</strong><span class="sr-only"> (opens in a new tab)</span></a>: a large collection of high-scoring undergraduate and graduate student writing across genres and disciplines</li>
+                                </ul>
+                                <p>Rather than analyzing an entire collection as given, you will use available texts and metadata to construct a focused subcorpus suited to an original research question. The subcorpus must include at least one meaningful point of comparison—such as genre, historical period, authorship, geographic region, character group, or another relevant category—and contain enough texts in each group to support responsible comparison.</p>
+                            </div>
+                        </div>
+                    </details>
+
+                    <details class="module-card">
+                        <summary>Major Assignments</summary>
+                        <div class="module-content">
+                            <div class="resource-group module-wide">
+                                <ul class="resource-list assignment-list">
+                                    <li><strong>Data Paper (15%):</strong> A 1,000-word report documenting the corpus or subcorpus constructed for the final project, including its sources, scope, metadata, selection criteria, and at least one meaningful point of comparison.</li>
+                                    <li><strong>Project Proposal (10%):</strong> A 3–4-page proposal outlining the research question, corpus, comparison groups, primary computational method, relevant scholarship, potential limitations, and completion plan.</li>
+                                    <li><strong>Final Paper (Case Study) (40%):</strong> A corpus-based case study using one primary computational method and supporting interpretive analysis, submitted with annotated Python notebooks. The paper is 7–10 pages for undergraduate students and 10–12 pages for graduate students.</li>
+                                    <li><strong>Presentation (5%):</strong> A 3–5-minute presentation introducing the research question, corpus, method, and most important finding, including one clear visualization.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </details>
+                    </div>
+                </section>
+
+                <section class="materials-section" aria-labelledby="weekly-resources-heading">
+                    <h2 id="weekly-resources-heading" class="section-heading">Weekly Resources</h2>
+                    <div class="module-list">
+                    <details class="module-card" open>
+                        <summary>Week 1: Defining Corpus Analysis</summary>
+                        <div class="module-content">
+                            <div class="resource-group">
+                                <h3 class="resource-heading">Readings (Due Before Class)</h3>
+                                <ul class="resource-list">
+                                    <li>Schöch, Dudar, &amp; Fileva (2023). <a href="https://methods.clsinfra.io/general-intro.html" target="_blank" rel="noopener noreferrer"><strong>General Introduction</strong><span class="sr-only"> (opens in a new tab)</span></a>. <em>Survey of Methods in Computational Literary Studies</em>.</li>
+                                    <li>Underwood (2020). <a href="https://www.cambridge.org/core/journals/pmla/article/machine-learning-and-human-perspective/00DFAFA05F458E95E06894E3A9DE8060" target="_blank" rel="noopener noreferrer"><strong>Machine Learning and Human Perspective</strong><span class="sr-only"> (opens in a new tab)</span></a>.</li>
+                                    <li>Da (2019). <a href="https://www.journals.uchicago.edu/doi/10.1086/702594" target="_blank" rel="noopener noreferrer"><strong>The Computational Case against Computational Literary Studies</strong><span class="sr-only"> (opens in a new tab)</span></a>.</li>
+                                    <li>Goldstone (2019). <a href="https://www.jstor.org/stable/10.5749/j.ctvg251hk.22" target="_blank" rel="noopener noreferrer"><strong>Teaching Quantitative Methods: What Makes It Hard (in Literary Studies)</strong><span class="sr-only"> (opens in a new tab)</span></a>.</li>
+                                </ul>
+                            </div>
+                            <div class="resource-group">
+                                <h3 class="resource-heading">Class Materials</h3>
+                                <ul class="resource-list"><li class="resource-placeholder">Class materials will be added here.</li></ul>
+                            </div>
+                        </div>
+                    </details>
+
+                    <details class="module-card">
+                        <summary>Week 2: Developing Research Questions for Corpus Analysis</summary>
+                        <div class="module-content">
+                            <div class="resource-group">
+                                <h3 class="resource-heading">Readings (Due Before Class)</h3>
+                                <ul class="resource-list">
+                                    <li>Boot (2023). <a href="https://culturalanalytics.org/article/68086" target="_blank" rel="noopener noreferrer"><strong>‘A Pretty Sublime Mix of WTF and OMG’: Four Explorations into the Practice of Evaluation on Online Book Reviewing Platforms</strong><span class="sr-only"> (opens in a new tab)</span></a>.</li>
+                                    <li>Algee-Hewitt et al. (2016). <a href="https://litlab.stanford.edu/LiteraryLabPamphlet11.pdf" target="_blank" rel="noopener noreferrer"><strong>Canon/Archive: Large-Scale Dynamics in the Literary Field</strong><span class="sr-only"> (opens in a new tab)</span></a>.</li>
+                                    <li>Underwood, Bamman, &amp; Lee (2018). <a href="https://www.ischool.berkeley.edu/research/publications/2018/transformation-gender-english-language-fiction" target="_blank" rel="noopener noreferrer"><strong>The Transformation of Gender in English-Language Fiction</strong><span class="sr-only"> (opens in a new tab)</span></a>.</li>
+                                    <li>Elkins (2025). <a href="https://doi.org/10.22148/001c.143671" target="_blank" rel="noopener noreferrer"><strong>Beyond Plot: How Sentiment Analysis Reshapes Our Understanding of Narrative Structure</strong><span class="sr-only"> (opens in a new tab)</span></a>.</li>
+                                </ul>
+                            </div>
+                            <div class="resource-group">
+                                <h3 class="resource-heading">Class Materials</h3>
+                                <ul class="resource-list"><li class="resource-placeholder">Class materials will be added here.</li></ul>
+                            </div>
+                        </div>
+                    </details>
+
+                    <details class="module-card">
+                        <summary>Week 3: Assembling a Corpus</summary>
+                        <div class="module-content">
+                            <div class="resource-group">
+                                <h3 class="resource-heading">Readings (Due Before Class)</h3>
+                                <ul class="resource-list">
+                                    <li>Fileva (2023). <a href="https://methods.clsinfra.io/corpus-intro.html" target="_blank" rel="noopener noreferrer"><strong>Introduction to Corpus Building</strong><span class="sr-only"> (opens in a new tab)</span></a>. <em>Survey of Methods in Computational Literary Studies</em>.</li>
+                                    <li>Beelen et al. (2023). <a href="https://academic.oup.com/dsh/article/38/1/1/6644524" target="_blank" rel="noopener noreferrer"><strong>Bias and Representativeness in Digitized Newspaper Collections</strong><span class="sr-only"> (opens in a new tab)</span></a>. <em>Digital Scholarship in the Humanities</em>, 38(1).</li>
+                                    <li>Piper (2022). <a href="https://doi.org/10.22148/001c.38739" target="_blank" rel="noopener noreferrer"><strong>Biodiversity Is Not Declining in Fiction</strong><span class="sr-only"> (opens in a new tab)</span></a>.</li>
+                                    <li>D’Ignazio &amp; Klein (2020). <a href="https://data-feminism.mitpress.mit.edu/pub/h1w0nbqp/release/1" target="_blank" rel="noopener noreferrer"><strong>What Gets Counted Counts</strong><span class="sr-only"> (opens in a new tab)</span></a>. <em>Data Feminism</em>.</li>
+                                </ul>
+                            </div>
+                            <div class="resource-group">
+                                <h3 class="resource-heading">Class Materials</h3>
+                                <ul class="resource-list"><li class="resource-placeholder">Class materials will be added here.</li></ul>
+                            </div>
+                        </div>
+                    </details>
+
+                    <details class="module-card">
+                        <summary>Week 4: Preparing a Corpus</summary>
+                        <div class="module-content">
+                            <div class="resource-group">
+                                <h3 class="resource-heading">Readings (Due Before Class)</h3>
+                                <ul class="resource-list">
+                                    <li>Gomide (2023). <a href="https://methods.clsinfra.io/annotation-intro.html" target="_blank" rel="noopener noreferrer"><strong>Introduction to Preprocessing and Annotation</strong><span class="sr-only"> (opens in a new tab)</span></a>. <em>Survey of Methods in Computational Literary Studies</em>.</li>
+                                    <li>Rawson &amp; Muñoz (2019). <a href="https://dhdebates.gc.cuny.edu/read/untitled-f2acf72c-a469-49d8-be35-67f9ac1e3a60/section/07154de9-4903-428e-9c61-7a92a6f22e51" target="_blank" rel="noopener noreferrer"><strong>Against Cleaning</strong><span class="sr-only"> (opens in a new tab)</span></a>. <em>Debates in the Digital Humanities 2019</em>.</li>
+                                    <li>Strange et al. (2014). <a href="https://digitalhumanities.org/dhq/vol/8/1/000168/000168.html" target="_blank" rel="noopener noreferrer"><strong>Mining for the Meanings of a Murder: The Impact of OCR Quality on the Use of Digitized Historical Newspapers</strong><span class="sr-only"> (opens in a new tab)</span></a>.</li>
+                                </ul>
+                            </div>
+                            <div class="resource-group">
+                                <h3 class="resource-heading">Class Materials</h3>
+                                <ul class="resource-list"><li class="resource-placeholder">Class materials will be added here.</li></ul>
+                            </div>
+                        </div>
+                    </details>
+
+                    <details class="module-card">
+                        <summary>Week 5: Workshop on Corpus Preparation</summary>
+                        <div class="module-content">
+                            <div class="resource-group">
+                                <h3 class="resource-heading">Readings (Due Before Class)</h3>
+                                <ul class="resource-list">
+                                    <li>Schöch et al. (2021). <a href="https://modernlanguagesopen.org/articles/10.3828/mlo.v0i0.364" target="_blank" rel="noopener noreferrer"><strong>Creating the European Literary Text Collection (ELTeC): Challenges and Perspectives</strong><span class="sr-only"> (opens in a new tab)</span></a>.</li>
+                                </ul>
+                            </div>
+                            <div class="resource-group">
+                                <h3 class="resource-heading">Class Materials</h3>
+                                <ul class="resource-list"><li class="resource-placeholder">Class materials will be added here.</li></ul>
+                            </div>
+                            <div class="module-due"><strong>Due this week:</strong> Data Paper</div>
+                        </div>
+                    </details>
+
+                    <details class="module-card">
+                        <summary>Week 6: Workshop on Frequency</summary>
+                        <div class="module-content">
+                            <div class="resource-group">
+                                <h3 class="resource-heading">Readings (Due Before Class)</h3>
+                                <ul class="resource-list">
+                                    <li>Gomide &amp; Schöch (2023). <a href="https://methods.clsinfra.io/analysis-intro.html" target="_blank" rel="noopener noreferrer"><strong>Introduction to Data Analysis</strong><span class="sr-only"> (opens in a new tab)</span></a>. <em>Survey of Methods in Computational Literary Studies</em>.</li>
+                                    <li>Katsma (2014). <a href="https://litlab.stanford.edu/LiteraryLabPamphlet7.pdf" target="_blank" rel="noopener noreferrer"><strong>Loudness in the Novel</strong><span class="sr-only"> (opens in a new tab)</span></a>. <em>Stanford Literary Lab Pamphlet 7</em>.</li>
+                                </ul>
+                            </div>
+                            <div class="resource-group">
+                                <h3 class="resource-heading">Class Materials</h3>
+                                <ul class="resource-list"><li class="resource-placeholder">Class materials will be added here.</li></ul>
+                            </div>
+                        </div>
+                    </details>
+
+                    <details class="module-card">
+                        <summary>Week 7: Fall Break</summary>
+                        <div class="module-content">
+                            <div class="resource-group">
+                                <h3 class="resource-heading">Readings (Due Before Class)</h3>
+                                <ul class="resource-list"><li class="resource-placeholder">No assigned readings.</li></ul>
+                            </div>
+                            <div class="resource-group">
+                                <h3 class="resource-heading">Class Materials</h3>
+                                <ul class="resource-list"><li class="resource-placeholder">Class materials will be added here.</li></ul>
+                            </div>
+                        </div>
+                    </details>
+
+                    <details class="module-card">
+                        <summary>Week 8: Workshop on Difference</summary>
+                        <div class="module-content">
+                            <div class="resource-group">
+                                <h3 class="resource-heading">Readings (Due Before Class)</h3>
+                                <ul class="resource-list">
+                                    <li>Underwood &amp; Sellers (2012). <a href="https://journalofdigitalhumanities.org/1-2/the-emergence-of-literary-diction-by-ted-underwood-and-jordan-sellers/" target="_blank" rel="noopener noreferrer"><strong>The Emergence of Literary Diction</strong><span class="sr-only"> (opens in a new tab)</span></a>. <em>Journal of Digital Humanities</em>, 1(2).</li>
+                                    <li>Culpeper (2009). <a href="https://benjamins.com/catalog/ijcl.14.1.03cul" target="_blank" rel="noopener noreferrer"><strong>Keyness: Words, Parts-of-Speech and Semantic Categories in the Character-Talk of Shakespeare’s <em>Romeo and Juliet</em></strong><span class="sr-only"> (opens in a new tab)</span></a>. <em>International Journal of Corpus Linguistics</em>, 14(1).</li>
+                                </ul>
+                            </div>
+                            <div class="resource-group">
+                                <h3 class="resource-heading">Class Materials</h3>
+                                <ul class="resource-list"><li class="resource-placeholder">Class materials will be added here.</li></ul>
+                            </div>
+                        </div>
+                    </details>
+
+                    <details class="module-card">
+                        <summary>Week 9: Workshop on Style</summary>
+                        <div class="module-content">
+                            <div class="resource-group">
+                                <h3 class="resource-heading">Readings (Due Before Class)</h3>
+                                <ul class="resource-list">
+                                    <li>Karsdorp, Kestemont, &amp; Riddell (2021). <a href="https://www.humanitiesdataanalysis.org/stylometry/notebook.html" target="_blank" rel="noopener noreferrer"><strong>Stylometry and the Voice of Hildegard</strong><span class="sr-only"> (opens in a new tab)</span></a>. <em>Humanities Data Analysis: Case Studies with Python</em>.</li>
+                                    <li>Vierthaler (2016). <a href="https://culturalanalytics.org/article/11059-fiction-and-history-polarity-and-stylistic-gradience-in-late-imperial-chinese-literature" target="_blank" rel="noopener noreferrer"><strong>Fiction and History: Polarity and Stylistic Gradience in Late Imperial Chinese Literature</strong><span class="sr-only"> (opens in a new tab)</span></a>. <em>Cultural Analytics</em>.</li>
+                                </ul>
+                            </div>
+                            <div class="resource-group">
+                                <h3 class="resource-heading">Class Materials</h3>
+                                <ul class="resource-list"><li class="resource-placeholder">Class materials will be added here.</li></ul>
+                            </div>
+                        </div>
+                    </details>
+
+                    <details class="module-card">
+                        <summary>Week 10: Workshop on Topics</summary>
+                        <div class="module-content">
+                            <div class="resource-group">
+                                <h3 class="resource-heading">Readings (Due Before Class)</h3>
+                                <ul class="resource-list">
+                                    <li>Goldstone &amp; Underwood (2012). <a href="https://journalofdigitalhumanities.org/2-1/what-can-topic-models-of-pmla-teach-us-by-ted-underwood-and-andrew-goldstone/" target="_blank" rel="noopener noreferrer"><strong>What Can Topic Models of <em>PMLA</em> Teach Us About the History of Literary Scholarship?</strong><span class="sr-only"> (opens in a new tab)</span></a>. <em>Journal of Digital Humanities</em>, 2(1).</li>
+                                    <li>Rhody (2012). <a href="https://journalofdigitalhumanities.org/2-1/topic-modeling-and-figurative-language-by-lisa-m-rhody/" target="_blank" rel="noopener noreferrer"><strong>Topic Modeling and Figurative Language</strong><span class="sr-only"> (opens in a new tab)</span></a>. <em>Journal of Digital Humanities</em>, 2(1).</li>
+                                </ul>
+                            </div>
+                            <div class="resource-group">
+                                <h3 class="resource-heading">Class Materials</h3>
+                                <ul class="resource-list"><li class="resource-placeholder">Class materials will be added here.</li></ul>
+                            </div>
+                        </div>
+                    </details>
+
+                    <details class="module-card">
+                        <summary>Week 11: Conferences with Dr. Kane</summary>
+                        <div class="module-content">
+                            <div class="resource-group">
+                                <h3 class="resource-heading">Readings (Due Before Class)</h3>
+                                <ul class="resource-list"><li class="resource-placeholder">No assigned readings.</li></ul>
+                            </div>
+                            <div class="resource-group">
+                                <h3 class="resource-heading">Class Materials</h3>
+                                <ul class="resource-list"><li class="resource-placeholder">Class materials will be added here.</li></ul>
+                            </div>
+                            <div class="module-due"><strong>Due this week:</strong> Project Proposal</div>
+                        </div>
+                    </details>
+
+                    <details class="module-card">
+                        <summary>Week 12: Evaluation and Visualization</summary>
+                        <div class="module-content">
+                            <div class="resource-group">
+                                <h3 class="resource-heading">Readings (Due Before Class)</h3>
+                                <ul class="resource-list">
+                                    <li>Šeļa (2023). <a href="https://methods.clsinfra.io/evaluation-lithist.html" target="_blank" rel="noopener noreferrer"><strong>Evaluation in Literary History</strong><span class="sr-only"> (opens in a new tab)</span></a>. <em>Survey of Methods in Computational Literary Studies</em>.</li>
+                                    <li>Drucker (2011). <a href="https://www.digitalhumanities.org/dhqdev/vol/5/1/000091/000091.html" target="_blank" rel="noopener noreferrer"><strong>Humanities Approaches to Graphical Display</strong><span class="sr-only"> (opens in a new tab)</span></a>. <em>Digital Humanities Quarterly</em>, 5(1).</li>
+                                </ul>
+                            </div>
+                            <div class="resource-group">
+                                <h3 class="resource-heading">Class Materials</h3>
+                                <ul class="resource-list"><li class="resource-placeholder">Class materials will be added here.</li></ul>
+                            </div>
+                        </div>
+                    </details>
+
+                    <details class="module-card">
+                        <summary>Week 13: Final Paper Workshop</summary>
+                        <div class="module-content">
+                            <div class="resource-group">
+                                <h3 class="resource-heading">Readings (Due Before Class)</h3>
+                                <ul class="resource-list">
+                                    <li>Mullen (2019). <a href="https://dhdebates.gc.cuny.edu/read/untitled-f2acf72c-a469-49d8-be35-67f9ac1e3a60/section/e5496dc6-dcc1-42e7-8609-9377d05812c5" target="_blank" rel="noopener noreferrer"><strong>A Braided Narrative for Digital History</strong><span class="sr-only"> (opens in a new tab)</span></a>. <em>Debates in the Digital Humanities 2019</em>.</li>
+                                    <li>Rockwell (2013). <a href="https://journalofdigitalhumanities.org/1-4/short-guide-to-evaluation-of-digital-work-by-geoffrey-rockwell/" target="_blank" rel="noopener noreferrer"><strong>Short Guide to Evaluation of Digital Work</strong><span class="sr-only"> (opens in a new tab)</span></a>. <em>Journal of Digital Humanities</em>, 1(4).</li>
+                                </ul>
+                            </div>
+                            <div class="resource-group">
+                                <h3 class="resource-heading">Class Materials</h3>
+                                <ul class="resource-list"><li class="resource-placeholder">Class materials will be added here.</li></ul>
+                            </div>
+                        </div>
+                    </details>
+
+                    <details class="module-card">
+                        <summary>Week 14: Final Paper Workshop</summary>
+                        <div class="module-content">
+                            <div class="resource-group">
+                                <h3 class="resource-heading">Readings (Due Before Class)</h3>
+                                <ul class="resource-list"><li class="resource-placeholder">No assigned readings.</li></ul>
+                            </div>
+                            <div class="resource-group">
+                                <h3 class="resource-heading">Class Materials</h3>
+                                <ul class="resource-list"><li class="resource-placeholder">Class materials will be added here.</li></ul>
+                            </div>
+                        </div>
+                    </details>
+
+                    <details class="module-card">
+                        <summary>Week 15: Paper Presentations</summary>
+                        <div class="module-content">
+                            <div class="resource-group">
+                                <h3 class="resource-heading">Readings (Due Before Class)</h3>
+                                <ul class="resource-list"><li class="resource-placeholder">No assigned readings.</li></ul>
+                            </div>
+                            <div class="resource-group">
+                                <h3 class="resource-heading">Class Materials</h3>
+                                <ul class="resource-list"><li class="resource-placeholder">Class materials will be added here.</li></ul>
+                            </div>
+                            <div class="module-due"><strong>Due this week:</strong> Final Paper</div>
+                        </div>
+                    </details>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Dr. Megan Kane. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('.course-sign-out').addEventListener('click', function() {
+            sessionStorage.removeItem('digitalTextMethodsAccess');
+            window.location.href = 'courses.html';
+        });
+    </script>
+</body>
+</html>

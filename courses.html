@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses | Megan Kane, Ph.D.</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Megan Kane, Ph.D.</h1>
+            <p class="tagline">Writing Instructor | Writing Analytics Researcher</p>
+            <nav aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#papers">Papers & Presentations</a></li>
+                    <li><a href="index.html#projects">Projects</a></li>
+                    <li><a href="index.html#courses">Courses</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section course-page">
+            <div class="container">
+                <h2>Courses</h2>
+                <div class="course-content">
+                    <h3>ENG 3121/6122: Digital Text Methods</h3>
+                    <p><strong>Semester:</strong> Fall 2026</p>
+                    <p><strong>Meeting Time:</strong> Tuesdays, 5–7:30 p.m.</p>
+                    <p><strong>Location:</strong> TBD</p>
+                    <p>This course introduces computational approaches to textual analysis using large collections of texts, or corpora. You will learn how to assemble and document a corpus, develop research questions suited to large-scale analysis, and use digital methods to identify patterns of style, structure, and meaning across texts. Along the way, you will consider how corpus analysis makes new kinds of textual inquiry possible—particularly questions that emerge from patterns distributed across dozens or hundreds of texts.</p>
+                    <p>Feel free to adapt this syllabus for your own usage!</p>
+                    <p>Recommended citation: Kane, Megan S. (2026). <em>ENG 3121/6122: Digital Text Methods</em> [Syllabus]. Department of English, Seton Hall University. <a href="https://meganskane.com/courses.html">https://meganskane.com/courses.html</a></p>
+                    <p>
+                        <a href="files/ENG-3121-6122-Digital-Text-Methods-Syllabus.docx" class="cta-button" download>
+                            Download the Syllabus
+                        </a>
+                    </p>
+
+                    <div class="course-access">
+                        <h3>Course Materials</h3>
+                        <form class="course-code-form">
+                            <label for="course-code">Enter course code for further resources. Email me at megan.kane@shu.edu if you wish to access these materials but do not have access.</label>
+                            <div class="course-code-controls">
+                                <input
+                                    type="password"
+                                    id="course-code"
+                                    name="course-code"
+                                    autocomplete="off"
+                                    aria-describedby="course-code-message"
+                                    required
+                                >
+                                <button type="submit" class="cta-button">Access Resources</button>
+                            </div>
+                            <p id="course-code-message" class="course-code-message" aria-live="polite"></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Dr. Megan Kane. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const courseCodeForm = document.querySelector('.course-code-form');
+        const courseCodeInput = document.querySelector('#course-code');
+        const courseCodeMessage = document.querySelector('#course-code-message');
+
+        courseCodeForm.addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            if (courseCodeInput.value.trim() === 'SHFA2026') {
+                courseCodeInput.removeAttribute('aria-invalid');
+                sessionStorage.setItem('digitalTextMethodsAccess', 'granted');
+                window.location.href = 'course-resources.html';
+            } else {
+                courseCodeInput.setAttribute('aria-invalid', 'true');
+                courseCodeMessage.textContent = 'That course code is not recognized. Please try again.';
+                courseCodeInput.select();
+            }
+        });
+
+        courseCodeInput.addEventListener('input', function() {
+            courseCodeInput.removeAttribute('aria-invalid');
+            courseCodeMessage.textContent = '';
+        });
+    </script>
+</body>
+</html>

@@ -22,6 +22,10 @@ body {
     padding-top: 150px; /* Add padding to account for fixed header */
 }
 
+.materials-page {
+    padding-top: 0;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -75,6 +79,25 @@ a {
 
 a:hover {
     color: var(--gold);
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible {
+    outline: 3px solid var(--light-gold);
+    outline-offset: 3px;
 }
 
 /* Header */
@@ -373,6 +396,223 @@ nav a:hover:after {
     color: var(--black);
 }
 
+/* Courses Page */
+.course-page {
+    min-height: calc(100vh - 250px);
+}
+
+.course-content {
+    max-width: 800px;
+}
+
+.course-access {
+    background-color: var(--dark-gray);
+    border-left: 3px solid var(--gold);
+    margin-top: 3rem;
+    padding: 2rem;
+}
+
+.course-code-form label {
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+}
+
+.course-code-controls {
+    display: flex;
+    gap: 1rem;
+    align-items: stretch;
+}
+
+.course-code-controls input {
+    flex: 1;
+    min-width: 0;
+    padding: 0.8rem;
+    border: 1px solid var(--light-gray);
+    border-radius: 3px;
+    background-color: var(--white);
+    color: var(--black);
+    font: inherit;
+    font-size: 1rem;
+}
+
+.course-code-controls input:focus-visible {
+    outline: 3px solid var(--black);
+    outline-offset: 2px;
+    box-shadow: 0 0 0 5px var(--light-gold);
+}
+
+.course-code-controls button {
+    border: none;
+    cursor: pointer;
+    font: inherit;
+}
+
+.course-code-message {
+    color: #ff9a9a;
+    margin: 0.75rem 0 0;
+}
+
+.modules-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.modules-heading > div {
+    flex: 1;
+}
+
+.modules-title {
+    font-size: 2.5rem;
+    margin-bottom: 2.5rem;
+    position: relative;
+    display: block;
+    width: fit-content;
+}
+
+.modules-title::after {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 2px;
+    background-color: var(--gold);
+    bottom: -10px;
+    left: 0;
+}
+
+.course-name {
+    display: block;
+    margin-bottom: 1.5rem;
+}
+
+.course-name::after {
+    display: none;
+}
+
+.course-meta {
+    margin-bottom: 1.5rem;
+}
+
+.course-meta p {
+    margin-bottom: 0;
+}
+
+.course-sign-out {
+    background: transparent;
+    color: var(--light-gray);
+    border: 1px solid var(--gold);
+    border-radius: 3px;
+    padding: 0.65rem 1rem;
+    cursor: pointer;
+    font: inherit;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.course-sign-out:hover,
+.course-sign-out:focus-visible {
+    background-color: var(--gold);
+    color: var(--black);
+}
+
+.module-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.materials-section + .materials-section {
+    padding-top: 5rem;
+}
+
+.section-heading {
+    margin-bottom: 3rem;
+}
+
+.module-card {
+    background-color: var(--dark-gray);
+    border: 1px solid var(--medium-gray);
+    border-left: 4px solid var(--gold);
+}
+
+.module-card summary {
+    padding: 1.25rem 1.5rem;
+    cursor: pointer;
+    color: var(--white);
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.module-card summary::marker {
+    color: var(--gold);
+}
+
+.module-card[open] summary {
+    border-bottom: 1px solid var(--medium-gray);
+}
+
+.module-card summary:hover,
+.module-card summary:focus-visible {
+    background-color: var(--medium-gray);
+}
+
+.module-content {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem;
+    padding: 1.5rem;
+}
+
+.resource-heading {
+    color: var(--gold);
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+}
+
+.resource-list {
+    list-style: none;
+}
+
+.resource-list li {
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    padding: 0.75rem 0;
+}
+
+.resource-list a {
+    text-decoration: underline;
+    text-decoration-color: var(--gold);
+    text-underline-offset: 3px;
+}
+
+.resource-placeholder {
+    color: #b8b8b8;
+    font-style: italic;
+}
+
+.module-wide {
+    grid-column: 1 / -1;
+}
+
+.module-wide .resource-list {
+    list-style: disc;
+    margin-bottom: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.module-wide .resource-list li::marker {
+    color: var(--gold);
+}
+
+.module-due {
+    grid-column: 1 / -1;
+    background-color: rgba(212, 175, 55, 0.12);
+    border-left: 3px solid var(--gold);
+    padding: 1rem;
+}
+
 /* Contact Section */
 .contact-content {
     margin-top: 2rem;
@@ -515,6 +755,14 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    body {
+        padding-top: 0;
+    }
+
+    header {
+        position: static;
+    }
+
     nav ul {
         flex-direction: column;
         gap: 1rem;
@@ -540,5 +788,18 @@ footer {
     
     .section {
         padding: 3rem 0;
+    }
+
+    .course-code-controls {
+        flex-direction: column;
+    }
+
+    .modules-heading {
+        flex-direction: column;
+    }
+
+    .module-content {
+        grid-template-columns: 1fr;
+        gap: 1rem;
     }
 }
