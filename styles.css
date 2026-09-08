@@ -22,7 +22,8 @@ body {
     padding-top: 150px; /* Add padding to account for fixed header */
 }
 
-.materials-page {
+.materials-page,
+.course-standalone-page {
     padding-top: 0;
 }
 
