@@ -406,6 +406,12 @@ nav a:hover:after {
     max-width: 800px;
 }
 
+.course-listing + .course-listing {
+    border-top: 1px solid rgba(212, 175, 55, 0.45);
+    margin-top: 4rem;
+    padding-top: 4rem;
+}
+
 .course-access {
     background-color: var(--dark-gray);
     border-left: 3px solid var(--gold);
