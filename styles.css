@@ -407,15 +407,9 @@ nav a:hover:after {
 }
 
 .course-listing + .course-listing {
-    margin-top: 1.5rem;
-}
-
-.course-details {
-    padding: 1.5rem;
-}
-
-.course-details > :last-child {
-    margin-bottom: 0;
+    border-top: 1px solid rgba(212, 175, 55, 0.45);
+    margin-top: 4rem;
+    padding-top: 4rem;
 }
 
 .course-access {
